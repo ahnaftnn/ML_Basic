@@ -24,13 +24,13 @@ This notebook performs the following machine learning tasks:
 
 8. Evaluate model performance
 
- -Accuracy
+     -Accuracy
 
- -Precision
+     -Precision
 
- -Recall
+     -Recall
 
- -F1-score
+     -F1-score
 
 **📂 Dataset**
 
