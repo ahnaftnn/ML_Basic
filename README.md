@@ -1,7 +1,7 @@
 # 📘 ML Basic -- K-Means Clustering & KNN Classification
 
 This project demonstrates a complete machine learning workflow using
-breast cancer diagnostic data.\
+breast cancer diagnostic data.
 It includes **data preprocessing**, **feature scaling**, **unsupervised
 clustering**, and **supervised classification**, followed by performance
 evaluation.
@@ -11,22 +11,22 @@ evaluation.
 ## ⭐ Project Summary
 
 The goal of this project is to classify breast cancer tumors as **Benign
-(0)** or **Malignant (1)** using machine learning techniques.\
+(0)** or **Malignant (1)** using machine learning techniques.
 The workflow includes:
 
--   Data cleaning\
--   Label encoding\
--   Normalization\
--   Train/test splitting\
--   K-Means clustering\
--   K-Nearest Neighbors classification\
+-   Data cleaning
+-   Label encoding
+-   Normalization
+-   Train/test splitting
+-   K-Means clustering
+-   K-Nearest Neighbors classification
 -   Model evaluation
 
 ------------------------------------------------------------------------
 
 ## 🧹 1. Data Preprocessing
 
-### ✔ Encoding the Target Column
+### ✔ Encoding the Target Column using Label Encoding
 
 The `diagnosis` column contains: - **M → Malignant** - **B → Benign**
 
@@ -39,7 +39,8 @@ numerical targets.
 
 ### ✔ Removing Unnecessary Columns
 
-Two columns were dropped: - `id` → does not contribute to prediction\
+Two columns were dropped: 
+- `id` → does not contribute to prediction
 - `Unnamed: 32` → an empty column with no values
 
 ------------------------------------------------------------------------
@@ -47,7 +48,12 @@ Two columns were dropped: - `id` → does not contribute to prediction\
 ## 📏 2. Feature Scaling (Min-Max Normalization)
 
 Min-Max Normalization was applied to all feature columns except the
-target (`diagnosis`).\
+target (`diagnosis`).
+Min-Max Normalization scales each feature to a fixed range, usually 0 to 1.
+It transforms values using the formula:
+
+    normalized_value = (value – min) / (max – min)
+
 This transforms each feature into a range between **0 and 1**, ensuring
 fair contribution of all features.
 
@@ -65,7 +71,7 @@ The dataset was split into:
 ## 🔵 4. K-Means Clustering (k = 2)
 
 K-Means clustering was applied to group the dataset into **2 clusters**,
-corresponding to benign and malignant types.\
+corresponding to benign and malignant types.
 Cluster labels were added to both training and test sets.
 
 ------------------------------------------------------------------------
@@ -81,9 +87,9 @@ predict tumor type based on feature similarity.
 
 Evaluation metrics used:
 
--   **Accuracy**\
--   **Precision**\
--   **Recall**\
+-   **Accuracy**
+-   **Precision**
+-   **Recall**
 -   **F1-score**
 
 ------------------------------------------------------------------------
@@ -99,14 +105,10 @@ Evaluation metrics used:
 
 ## 🎯 Conclusion
 
-This project showcases: - Preprocessing\
-- Normalization\
-- Clustering (K-Means)\
-- Classification (KNN)\
+This project showcases: - Preprocessing
+- Normalization
+- Clustering (K-Means)
+- Classification (KNN)
 - Model evaluation
 
-------------------------------------------------------------------------
 
-## 📬 Contact
-
-**Author:** Ahnaf
