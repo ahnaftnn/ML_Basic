@@ -1,28 +1,28 @@
 "# ML Basic"
 
-#KNN_Kmeans.ipynb
+**KNN_Kmeans.ipynb**
 This project applies Machine Learning classification and clustering techniques on a breast cancer dataset.
 The workflow includes preprocessing, encoding, normalization, clustering using K-Means, and classification using K-Nearest Neighbors (KNN).
 
-📌 Project Overview
+**📌 Project Overview**
 
 This notebook performs the following machine learning tasks:
 
-Load and inspect dataset
+1. Load and inspect dataset
 
-Encode target labels (diagnosis column)
+2. Encode target labels (diagnosis column)
 
-Drop unnecessary columns
+3. Drop unnecessary columns
 
-Apply Min-Max Normalization
+4. Apply Min-Max Normalization
 
-Split dataset into training and test sets
+5. Split dataset into training and test sets
 
-Apply K-Means clustering (k = 2)
+6. Apply K-Means clustering (k = 2)
 
-Train a KNN Classifier (k = 5)
+7. Train a KNN Classifier (k = 5)
 
-Evaluate model performance
+8. Evaluate model performance
 
  -Accuracy
 
@@ -31,3 +31,21 @@ Evaluate model performance
  -Recall
 
  -F1-score
+
+**📂 Dataset**
+
+The dataset contains breast cancer diagnostic data, including features such as radius, texture, smoothness, compactness, etc.
+
+ **Target Column**
+
+   diagnosis:
+
+    M → 1 (Malignant)
+
+    B → 0 (Benign)
+
+   Dropped Columns:
+
+     id
+
+     Unnamed: 32
